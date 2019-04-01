@@ -1,0 +1,8 @@
+<svg width='50' height='20' xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+    path {stroke:black;stroke-width:2px;}
+</style>
+    <path d='M0,1 l30,0' />
+    <path d='M0,10 l50,0' />
+    <path d='M0,19 l20,0' />
+</svg>
