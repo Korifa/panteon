@@ -1,1 +1,1 @@
-[link] (https://korifa.github.io/panteon/index.html)
+[link](https://korifa.github.io/panteon/index.html)
