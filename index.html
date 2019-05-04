@@ -10,19 +10,18 @@
     <body>
         <header class='header'>
             <div class='header__wrapper wrapper'>
-                <a href='#' class='header__logo'>
-                    <span class='header__logo_item'>Pantheon</span>
-                </a>
-                <span class='header__nvigation_button'>
-                    <svg width='50' height='20' xmlns="http://www.w3.org/2000/svg">
-                    <style type="text/css">
-                        path {stroke:#fff;stroke-width:2px;transition: all 1s ease;}
-                    </style>
-                        <path id='line_top' d='M0,1 l30,0' />
-                        <path id='line_mid' d='M0,10 l50,0' />
-                        <path id='line_bot' d='M0,19 l20,0' />
-                    </svg>
-                </span>
+                <div class='heade_flex_box'>
+                    <a href='#' class='header__logo'>
+                        <span class='header__logo_item'>Pantheon</span>
+                    </a>
+                    <span class='header__nvigation_button'>
+                        <svg width='50' height='20' xmlns="http://www.w3.org/2000/svg">
+                            <path class='burger_svg_btn' id='line_top' d='M0,1 l30,0' />
+                            <path class='burger_svg_btn' id='line_mid' d='M0,10 l50,0' />
+                            <path class='burger_svg_btn' id='line_bot' d='M0,19 l20,0' />
+                        </svg>
+                    </span>
+                </div>
                 <nav class='header__navigation'>
                     <a href='#'>Itme 1</a>
                     <a href='#'>Itme 2</a>
@@ -39,24 +38,117 @@
                 </div>
                 <div class='header_video_wrap'>
                     <div class='header_video'>
-                        <video class='header_video_item' poster='assets/images/320/video_320.png'>
+                        <video class='header_video_item' poster='assets/images/750/bg_video_750.png'>
                         </video>
-                        <span class="heade_video_play"></span>
                     </div>
+                    <span class='header_video_play_wrap'>
+                        <span class="header_video_play"></span>
+                    </span>
                     <p class='header__text_video'>Первый город на планете Марс недалеко от
                         горы Олимп</p>
                 </div>
                 <div class='header__button button_bot'>
                     <svg width='62' height='62' xmlns="http://www.w3.org/2000/svg">
-                        <circle cx='31' cy='31' r='30' fill='#b41f5f' fill-opacity='0.5'></circle>
+                        <circle class='button_bot_circle' cx='31' cy='31' r='30'></circle>
                         <g id='pointer'>
-                        <path d='M22,30 l9,9 l9,-9 M30,31 l9,-9' fill='none' stroke-width='2' stroke='white' />
+                        <path class='button_bot_path' d='M22,30 l9,9 l9,-9 M30,31 l9,-9' />
                         </g>
                     </svg>
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <aside class='top_add_inf'>
+                <div class='main__wrapper wrapper'>
+                    <div class='top_add_inf_block'>
+                        <span class='top_add_inf_block_num'>4</span>
+                        <p class='top_add_inf_block_text'>четвёртая планета по удаленности от
+                        Солнца</p>
+                    </div>
+                    <div class='top_add_inf_block inf_block_2'>
+                        <span class='top_add_inf_block_num'>7</span>
+                        <p class='top_add_inf_block_text'>седьмая 
+                        по размерам планета Солнечной
+                        системы</p>
+                    </div>
+                    <div class='top_add_inf_block inf_block_2'>
+                        <span class='top_add_inf_block_num'>10,7%</span>
+                        <p class='top_add_inf_block_text'>масса Земли (ваш вес будет
+                        в 3 раза меньше чем, на Земле)</p>
+                    </div>
+                    <div class='top_add_inf_block inf_block_2'>
+                        <span class='top_add_inf_block_num'>2</span>
+                        <p class='top_add_inf_block_text'>спутника вместо Луны
+                        (как картошка, только больше)</p>
+                    </div>
+                    <div class='top_add_inf_block inf_block_2'>
+                        <span class='top_add_inf_block_num'>21 км</span>
+                        <p class='top_add_inf_block_text'>высота самой высокой горы Марса</p>
+                    </div>
+                    <div class='top_add_inf_block'>
+                        <span class='top_add_inf_block_num'>+20</span>
+                        <p class='top_add_inf_block_text'>максимальная температура на 
+                        поверхности</p>
+                    </div>
+                </div>
+            </aside>
+            <section class='remember_all'>
+                <div class='remember_all_wrap wrapper' id='grid_container'>
+                    <h1 class='remember_all_headline'>
+                        Марс.  Вспомнить всё
+                    </h1>
+                    <div class='remember_all_chapter chapter_0'>
+                        <h2 class='remember_all_chapter_headline'>
+                            Что такое Марс?
+                        </h2>
+                        <p class='remember_all_chapter_text'>
+                            Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.
+                        </p> 
+                        <p class='remember_all_chapter_text'>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв. 
+                        </p>
+                    </div>
+                    <div class='remember_all_chapter chapter_1'>
+                        <h2 class='remember_all_chapter_headline'>
+                            Где это? Как туда  доехать?
+                        </h2>
+                        <p class='remember_all_chapter_text'>
+                            Расстояние до Марса — почти 56 миллионов километров. 
+                        </p>
+                        <p class='remember_all_chapter_text'>Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.
+                        </p>
+                    </div>
+                </div>
+                <div class='ellipse_container_relative' id='ellipse_container'>
+                    <div class='ellipse_container_absolute'>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1447 1295">
+                              <defs>
+                                <symbol id="space-ship" viewBox="0 0 32 40">
+                                  <path class="space-ship-stroke" d="M15.74,31.66,11.5,30.22a.87.87,0,0,1-.58-.65c-.43-2.2-2.06-11.12-1.19-15.48S14.82,3.71,15.81,2.35a.25.25,0,0,1,.42,0c1,1.36,5.2,7.34,6.08,11.74s-.76,13.28-1.19,15.48a.87.87,0,0,1-.58.65L16.3,31.66A.89.89,0,0,1,15.74,31.66ZM5.62,21.5l-4,7.86a1.24,1.24,0,0,0,1.55,1.71l3.5-1.38a1,1,0,0,0,.64-1.11l-1-7A.38.38,0,0,0,5.62,21.5Zm20.1.12-1,7a1,1,0,0,0,.65,1.11l3.5,1.38a1.23,1.23,0,0,0,1.54-1.71l-4-7.86A.37.37,0,0,0,25.72,21.62ZM17.52,37.8l-1.29-4.15a.22.22,0,0,0-.42,0L14.52,37.8a.22.22,0,0,0,.21.29h2.58A.22.22,0,0,0,17.52,37.8Zm-3.73.1,0-3.44a.18.18,0,0,0-.32-.1L11.5,37.22a.18.18,0,0,0,.1.27l2,.59A.19.19,0,0,0,13.79,37.9Zm4.69.18,2-.59a.17.17,0,0,0,.1-.27l-1.92-2.86a.18.18,0,0,0-.33.1l0,3.44A.19.19,0,0,0,18.48,38.08Z"/>
+                                  <path class="space-ship-fill" d="M15.74,31.66,11.5,30.22a.87.87,0,0,1-.58-.65c-.43-2.2-2.06-11.12-1.19-15.48S14.82,3.71,15.81,2.35a.25.25,0,0,1,.42,0c1,1.36,5.2,7.34,6.08,11.74s-.76,13.28-1.19,15.48a.87.87,0,0,1-.58.65L16.3,31.66A.89.89,0,0,1,15.74,31.66ZM5.62,21.5l-4,7.86a1.24,1.24,0,0,0,1.55,1.71l3.5-1.38a1,1,0,0,0,.64-1.11l-1-7A.38.38,0,0,0,5.62,21.5Zm20.1.12-1,7a1,1,0,0,0,.65,1.11l3.5,1.38a1.23,1.23,0,0,0,1.54-1.71l-4-7.86A.37.37,0,0,0,25.72,21.62ZM17.52,37.8l-1.29-4.15a.22.22,0,0,0-.42,0L14.52,37.8a.22.22,0,0,0,.21.29h2.58A.22.22,0,0,0,17.52,37.8Zm-3.73.1,0-3.44a.18.18,0,0,0-.32-.1L11.5,37.22a.18.18,0,0,0,.1.27l2,.59A.19.19,0,0,0,13.79,37.9Zm4.69.18,2-.59a.17.17,0,0,0,.1-.27l-1.92-2.86a.18.18,0,0,0-.33.1l0,3.44A.19.19,0,0,0,18.48,38.08Z"/>
+                                </symbol>
+                              </defs>
+                            <g id="svg_rememberall">
+                                <path id="svg_ellipse" class="shp0" d="M1.4,630.71c-24.54,349.05 278.86,633.05 677.67,634.32c398.81,1.27 742,-280.66 766.54,-629.71c24.54,-349.05 -278.86,-633.05 -677.67,-634.32c-398.81,-1.27 -742,280.66 -766.54,629.71z" />
+                                <circle cx='1093.15' class="shp1" cy='1156.815' r='22' fill='green' />
+                                <circle cx='832.1' class="shp1" cy='1251.47' r='40' fill='green' /> 
+                            </g>
+                            <text id="earth-label" class="planet-label" x="1035" y="1150" text-anchor="middle">Mars</text>
+                            <text id="mars-label" class="planet-label" x="845" y="1190" text-anchor="middle">Earth</text>
+                            <use id="ship" href="#space-ship" x="996.96" y="1186" width="32" height="40" transform="rotate(67, 996.96,1186)"></use>
+                            <g id='ship-and-text' transform="translate(0,0)">
+                                <g id="ship-label" class="ship-label" transform="translate(960,1245)">
+                                    <text class="ship-label-number" x="0" y="0" transform="translate(0 13)">56</text>
+                                    <text class="ship-label-measure" x="0" y="0" transform="translate(32 3.5)">mln km</text>
+                                    <text class="ship-label-number" x="0" y="0" transform="translate(85 13)">7</text>
+                                    <text class="ship-label-measure" x="0" y="0" transform="translate(102 3.5)">mtns</text>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
+    <script type='text/javascript' src='code.js'></script>
     </body>
 </html>

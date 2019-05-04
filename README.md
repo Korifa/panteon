@@ -1,1 +1,1 @@
-[link](https://korifa.github.io/panteon/index.html)
+# korifa.github.io/panteon/index.html
