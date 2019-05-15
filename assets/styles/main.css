@@ -393,6 +393,203 @@ body {
     transform-origin: 50% 50%;
     transform-box: fill-box;
   }
+  .from_idea_to_implement_wrap {
+    display: grid;
+    grid-template-rows: repeat(7,auto);
+    grid-template-columns: 68% 27.777%;
+    grid-column-gap: 4.2%;
+    font: 1rem/1.5 var(--font-light);
+  }
+
+  .to_implement_headline,
+  .to_implement_question,
+  .to_implement_mask_ab,
+  .to_implement_mask_photo,
+  .to_implement_mask_quote,
+  .to_implement_mask_goal {
+      grid-column: 1/3;
+      grid-row: span 1;
+  }
+  .to_implement_headline {
+      font: 2.25rem var(--font-bold);
+      color: var(--main-color);
+      margin: 0;
+      margin-bottom: 1em;
+      line-height: initial;
+  }
+  .to_implement_question {
+    font: 1.5rem var(--font-bold);
+    margin-bottom: 1.33em;
+    line-height: initial;
+  }
+  .to_implement_mask_ab {
+    margin-bottom: 2em;
+  }
+  .to_implement_mask_photo {
+    width: 54.27%;
+    margin: 0 auto 3.75em;
+  }
+  .mask_photo_container {
+      outline: 10px solid var(--main-color);
+      position: relative;
+  }
+  .mask_img {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 22px; right: 22px;
+    max-width:100%;
+  }
+  .to_implement_mask_quote {
+    color: var(--main-color);
+    margin-bottom: 2.5em;
+  }
+  .to_implement_mask_goal {
+    margin-bottom: 1em;
+  }
+  .cost_of_flight_outer_continer {
+    position: relative;
+    border: 1px solid transparent;
+    margin-top: 13.5em;
+  }
+  .to_implement_ready_block {
+    position: absolute;
+    top: -140px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90.625%;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: 29.55% 64.76%;
+    grid-column-gap: 5.6%;
+    align-items: flex-end;
+  }
+
+  .rocket_photo {
+    display: block;
+    grid-row: 1/ span 1;
+    grid-column: 1/3;
+    max-width: 100%;
+  }
+  .cost_of_flight_des_cont {
+    margin-top: 2.857em;
+    grid-row: 2/ span 1;
+    grid-column: 1/3;
+  }
+  .cost_of_flight_des_headline {
+    font: 1.5rem var(--font-bold);
+    color: #fff;
+  }
+  .cost_of_flight_des_text {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 1.8em;
+  }
+  
+  .cost_of_flight_price_cont {
+    grid-column: 1/3;
+    grid-row: 3/ span 1;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid transparent;
+    justify-content: space-between;
+  }
+
+  .cost_of_flight_price {
+    font: 3.75em var(--font-thin);
+    color: #fff;
+    margin-top: 0.58em;
+    margin-bottom: 0.5em;
+  }
+  .cost_of_flight_price_text {
+    font: 1.5rem var(--font-thin);
+    display: block;
+    position: relative;
+    color: #fff;
+    margin-bottom: 2em;
+  }
+  .cost_of_flight_price_text::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 75.86%;
+    bottom: -0.2em;
+    height: 1px;
+    background: #fff;
+  }
+  .cost_of_flight_price_btn {
+    font: 1.125rem var(--font-bold);
+    color: #c2529a;
+    width: 100%;
+    padding: 1em;
+    background: #fff;
+    border-radius: 30px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 27px 5px rgba(255,255,255,.48);
+  }
+  .cost_of_flight_bg {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+  }
+  .underwater_rocks_headline {
+      font: 2.25rem var(--font-bold);
+      color: #fff;
+  }
+  .underwater_rocks_video_cont {
+
+  }
+  .underwater_rocks_video {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      background: red;
+  }
+  .underwater_rocks {
+      overflow: hidden;
+      background: url("../images/1100/underwater_rocks_bg_1170.jpg")
+      no-repeat center top;
+  }
+  .underwater_rocks_nav ul {
+      list-style-type: none;
+  }
+  .underwater_rocks_nav ul li {
+      position: relative;
+      cursor: pointer;
+  }
+  .underwater_rocks_nav ul li a {
+      text-decoration: none;
+      color: #908bb1;
+      font-size: 1rem;
+      margin-top: 2.8em;
+      display: block;
+      width: 60%;
+  }
+  .underwater_rocks_nav ul li:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      display: block;
+      border-top: 2.5px solid  #908bb1;;
+      border-right: 2.5px solid  #908bb1;;
+      transform-origin: 50% 20%;
+      width: 11.31px;
+      height: 11.31px;
+      transition: all 0.5s ease;
+      transform: rotate(45deg) translateY(-50%);
+  }
+  .underwater_rocks_nav ul li:hover a {
+      color: #fff;
+  }
+  .underwater_rocks_nav ul li:hover:after {
+      transform: rotate(-45deg);
+      border-top-color: #fff;
+      border-right-color: #fff;
+  }
+
 @media (min-width: 600px) {
     
     .header {
@@ -401,7 +598,7 @@ body {
     }
     
     .header__logo {
-        margin: 2.285em 6em;
+        margin-top: 2.285em;
     }
     .header__logo::before {
         top: -6px;
@@ -456,6 +653,74 @@ body {
     .chapter_1 {
         grid-column: 2/3;
     }
+    .to_implement_headline,
+    .to_implement_question,
+    .to_implement_mask_ab,
+    .to_implement_mask_quote {
+        grid-column: 1/2;
+    }
+    .to_implement_mask_photo {
+        width: calc(100% - 20px);
+        grid-column: 2/3;
+        grid-row: 3/5;
+        margin: 0 auto;
+        transform: translateY(15px);
+    }
+    .to_implement_mask_quote {
+        font-size: 1.125rem;
+        margin-bottom: 1.666em;
+    }
+    .cost_of_flight_outer_continer {
+        width: 95%;
+        margin: 6em auto 0;
+    }
+    .to_implement_ready_block {
+        width: 92%;
+        top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cost_of_flight_des_cont {
+        grid-column: 2/3;
+        grid-row: 1/ span 2;
+        margin-left: 7.85em;
+    }
+    .rocket_photo {
+        max-width: 260px;
+        grid-column: 1/2;
+        grid-row: 1 / span 2;
+    }
+    .cost_of_flight_price_cont {
+        margin-top: 3.57em;
+        margin-bottom: 4em;
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: initial;
+        grid-column: 1/3;
+        grid-row: 3/ span 1;
+    }
+    .cost_of_flight_price_btn,
+    .cost_of_flight_price_text,
+    .cost_of_flight_price {
+        margin: 0;
+    }
+    .cost_of_flight_price {
+        line-height: 0.9;
+    }
+    .cost_of_flight_price_text {
+        margin-left: 1.1em;
+        width: 250px;
+    }
+    .cost_of_flight_price_text::after {
+        width: 100%;
+    }
+    .cost_of_flight_price_btn {
+        max-width: 200px;
+        margin-left: auto;
+    }
+    .cost_of_flight_bg {
+        max-height: 380px;
+    }
 }
 @media (min-width: 1000px) {
     .header {
@@ -468,6 +733,57 @@ body {
     .header__text_vertical {
         left: 10.2%;
         top: 260px;
+    }
+
+    .cost_of_flight_bg {
+        max-height: 310px;
+    }
+    .to_implement_headline,
+    .to_implement_question,
+    .to_implement_mask_ab,
+    .to_implement_mask_quote,
+    .to_implement_mask_goal {
+        margin-bottom: 0;
+        max-width: 700px;
+    }
+
+    .to_implement_headline {
+        font-size: 3.75em;
+        margin-bottom: 0.5em;
+    }
+
+    .to_implement_ready_block {
+        top: -30px;
+    }
+    .to_implement_mask_goal {
+        grid-column: 1/2;
+    }
+    .mask_img {
+        top: 50px;
+        right: 50px;
+    }
+    .to_implement_mask_photo {
+        grid-row: 2/6;
+    }
+
+    .cost_of_flight_outer_continer {
+        margin-top: 4em;
+    }
+
+    .rocket_photo {
+        max-width: 100%;
+        grid-row: 1/ span 3;
+        align-self: flex-start;
+    }
+    .cost_of_flight_des_cont {
+        margin-top: 6.7em;
+        grid-row: 1/ span 1;
+        margin-left: initial;
+    }
+    .cost_of_flight_price_cont {
+        margin-top: 1.4em;
+        grid-column: 2/3;
+        grid-row: 2/ span 2;
     }
 
 }
