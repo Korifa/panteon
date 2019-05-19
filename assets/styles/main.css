@@ -59,6 +59,7 @@
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    background-clip: border-box;
 }
 
 body {
@@ -342,18 +343,26 @@ body {
     margin-bottom: 1.428em;
     line-height: 1.5;
 }
-
+.ellipse_container_relative_not_hidden {
+    position: relative;
+    height: 290px;
+}
+.help_ellipse_cont_absolute {
+    position: absolute;
+    width: 100%;
+    top: -90px;
+}
 .ellipse_container_relative {
     position: relative;
-    height: 460px;
+    height: 290px;
     overflow: hidden;
 }
 
 .ellipse_container_absolute {
     position: absolute;
-    width: 442%;
+    width: 452%;
     max-width: 2717px;
-    right: -400px;/*-328px;*/
+    left: -790px;
     bottom: 0;
 }
 
@@ -369,11 +378,13 @@ body {
 .planet-label {
     stroke: #e12457;
     font-size: 16px;
-    user-select: none; 
+    user-select: none;
+    vector-effect: non-scaling-stroke;
 }
 .ship-label {
     font: 1.5rem var(--font-light);
     stroke: #e12457;
+    vector-effect: non-scaling-stroke;
 }
 .ship-label-measure {
     font-size: 0.9rem;
@@ -447,10 +458,13 @@ body {
   .to_implement_mask_goal {
     margin-bottom: 1em;
   }
-  .cost_of_flight_outer_continer {
+  .cost_of_flight_outer_container {
     position: relative;
-    border: 1px solid transparent;
     margin-top: 13.5em;
+    background: url("../images/320/rocket_bg_320.jpg") no-repeat center top;
+    background-size: 100% 100%;
+    max-width: 1170px;
+    height: 650px;
   }
   .to_implement_ready_block {
     position: absolute;
@@ -653,6 +667,30 @@ body {
     .chapter_1 {
         grid-column: 2/3;
     }
+    .ellipse_container_relative,
+    .ellipse_container_relative_not_hidden {
+        height: 331px;
+    }
+    #earth-label {
+        transform: translate(58px,10px);
+    }
+    #mars-label {
+        transform: translate(-14px,62px);
+    }
+    .planet-label {
+        font-size: 8.5px;
+    }
+    .ship-label {
+        font-size: 12.78px;
+    }
+    .ship-label-measure-mln {
+        transform: translate(20px,10px);
+        font-size: 11px;
+    }
+    .ship-label-measure-mtns {
+        font-size: 11px;
+        transform: translate(95px,10px);
+    }
     .to_implement_headline,
     .to_implement_question,
     .to_implement_mask_ab,
@@ -670,16 +708,20 @@ body {
         font-size: 1.125rem;
         margin-bottom: 1.666em;
     }
-    .cost_of_flight_outer_continer {
-        width: 95%;
-        margin: 6em auto 0;
-    }
     .to_implement_ready_block {
         width: 92%;
         top: -50px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .cost_of_flight_outer_container {
+        width: 95%;
+        margin: 6em auto;
+        background-image: url("../images/750/rocket_bg_750.jpg");
+        height: 377px;
+    }
+
     .cost_of_flight_des_cont {
         grid-column: 2/3;
         grid-row: 1/ span 2;
@@ -734,7 +776,21 @@ body {
         left: 10.2%;
         top: 260px;
     }
-
+    .remember_all_chapter_headline {
+        margin-bottom: 1em;
+    }
+    .remember_all_chapter_text {
+        margin-bottom: 0;
+    }
+    .remember_all_chapter.chapter_1 {
+        max-width: 370px;
+    }
+    .remember_all_first_chapter {
+        margin-bottom: 1em;
+    }
+    .help_ellipse_cont_absolute {
+        top: -120px;
+    }
     .cost_of_flight_bg {
         max-height: 310px;
     }
@@ -766,8 +822,12 @@ body {
         grid-row: 2/6;
     }
 
-    .cost_of_flight_outer_continer {
+    .cost_of_flight_outer_container {
+        width: 100%;
         margin-top: 4em;
+        height: 308px;
+        background-image: url("../images/1100/rocket_bg_1170.jpg");
+        margin-bottom: 11.7em;
     }
 
     .rocket_photo {
