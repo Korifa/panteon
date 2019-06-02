@@ -1,13 +1,13 @@
 class TouchRocksLink {
     constructor(item) {
         this.link = item;
-        this.linkData = this.link.getAttribute('data');
+        this.linkData = !!this.link.getAttribute('data');
         this.link.addEventListener('touched', this.handleThouchies);
         this.handleThouchies = this.handleThouchies.bind(this);
     }
 
     handleThouchies(e) {
-        if (!this.linkData) {
+        if (this.linkData) {
             this.linkData = !this.linkData
             this.link.nextElementSibling.style.display = 'block';
         } else {
