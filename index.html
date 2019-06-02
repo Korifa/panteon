@@ -243,21 +243,28 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer_wrap wrapper">
-                <h1>Деньги приготовил.  Когда вылетаем?</h1>
-                <div>
-                    <p>Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
-                    <p>Для всех желающих открыты курсы подготовки.</p>
-                    <p>За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
-                    <a>Критерии отбора</a>
+        <footer id="footer">
+            <div class="footer_wrapper_outer">
+                <h1 class="footer_headline">Деньги приготовил.  Когда вылетаем?</h1>
+                <div class="footer_text_cont">
+                    <p class='footer_text_par'>Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+                    <p class='footer_text_par'>Для всех желающих открыты курсы подготовки.</p>
+                    <p class='footer_text_par'>За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
+                    <a href="#" class="footer_link">Критерии отбора</a>
                 </div>
-                <form method="GET" name='sub'class='footer_form'>
-                    <legend>Будь в курсе новостей</legend>
-                    <p><input type='text' placeholder="Имя" /></p>
-                    <input type='email' placeholder="E-mail" />
-                    <button type="submit" value="send">Подписаться</button>
+                <form method="GET" name='sub' id='footer_form'>
+                    <legend class="footer_form_headline">Будь в курсе новостей</legend>
+                    <p><input type='text' placeholder="Имя" required form="footer_form" /></p>
+                    <p><input type='email' placeholder="E-mail" required form="footer_form" /></p>
+                    <button type="submit" class="cost_of_flight_price_btn footer_form_btn" value="send">Подписаться</button>
                 </form>
+                <div class="footer_add_inf">
+                    <div class="social_footer"></div>
+                    <a href='#'>Подробнее о проекте</a>
+                    <a href='#' class='header__logo'>
+                        <span class='header__logo_item'>Pantheon</span>
+                    </a>
+                </div>
             </div>
         </footer>
     <script type='text/javascript' src='code.js'></script>
