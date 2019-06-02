@@ -1,3 +1,33 @@
+class TouchRocksLink {
+    constructor(item) {
+        this.link = item;
+        this.linkData = this.link.getAttribute('data');
+        this.link.addEventListener('touched', this.handleThouchies);
+        this.handleThouchies = this.handleThouchies.bind(this);
+    }
+
+    handleThouchies(e) {
+        if (!this.linkData) {
+            this.linkData = !this.linkData
+            this.link.nextElementSibling.style.display = 'block';
+        } else {
+            this.linkData = !this.linkData
+            this.link.nextElementSibling.style.display = 'none';
+        }
+    }
+
+}
+{
+    const underwater_rocks_ul = document.getElementById('nav_list');
+    const underwater_rocks_links = underwater_rocks_ul.querySelectorAll('a');
+    for (let i = 0; i < underwater_rocks_links.length; i++) {
+        new TouchRocksLink(underwater_rocks_links[i])
+    }
+}
+
+
+
+
 function upd_view() {
     const init_size = 1447;
     const wind_width = window.innerWidth
