@@ -204,19 +204,62 @@
                     <div class="underwater_rocks_video_cont">
                         <video class="underwater_rocks_video" 
                         poster="assets/images/1100/underwater_rocks_video_poster_1170.jpg"></video>
+                        <span class='header_video_play_wrap underwater_rocks_video_wrap'>
+                            <span class="header_video_play underwater_rocks_video_play"></span>
+                        </span>
                     </div>
                     <nav class="underwater_rocks_nav">
                         <ul>
-                            <li><a href="#" >Жить или выживать?</a></li>
-                            <li><a href="#" >Готовы ли технологии?</a></li>
-                            <li><a href="#" >Путешествие на грани фантастики</a></li>
-                            <li><a href="#" >Жизнь на Марсе</a></li>
+                            <li id='li_nav_text_live'><a href="#" >Жить или выживать?</a>
+                                <div class="nav_text nav_text_live">
+                                    <p class='nav_text_par'>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+                                    <p class='nav_text_par'>
+                                        Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.
+                                    </p>
+                                    <p>
+                                        На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
+                                    </p> 
+                                </div>
+                            </li>
+                            <li id='li_nav_text_technologies'><a href="#" >Готовы ли технологии?</a>
+                                <p class="nav_text nav_text_technologies">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                            </li>
+                            <li id="li_nav_text_traveling"><a href="#" >Путешествие на грани<br /> фантастики</a>
+                                <p class="nav_text nav_text_traveling">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                            </li>
+                            <li id='li_nav_text_live_on_mars'><a href="#" >Жизнь на Марсе</a>
+                                <p class="nav_text nav_text_live_on_mars">
+                                    На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
+                                </p>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </section>
+            <section id='life_in_the_colony'>
+                <div class="life_in_the_colony_wrap wrapper">
+                    <h1 class="life_in_the_colony_headline">Организация  жизни в колонии</h1>
+                    <p></p>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer_wrap wrapper">
+                <h1>Деньги приготовил.  Когда вылетаем?</h1>
+                <div>
+                    <p>Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+                    <p>Для всех желающих открыты курсы подготовки.</p>
+                    <p>За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
+                    <a>Критерии отбора</a>
+                </div>
+                <form method="GET" name='sub'class='footer_form'>
+                    <legend>Будь в курсе новостей</legend>
+                    <p><input type='text' placeholder="Имя" /></p>
+                    <input type='email' placeholder="E-mail" />
+                    <button type="submit" value="send">Подписаться</button>
+                </form>
+            </div>
+        </footer>
     <script type='text/javascript' src='code.js'></script>
     </body>
 </html>

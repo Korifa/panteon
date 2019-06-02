@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="31">
+<path d='M5.5,0 l5.5,5.5 l-5.5,5.5' transform='translate(0,12.5)' fill='none' stroke-width='2' stroke='#908bb1' />
+<path d='M5.5,0 l5.5,5.5 l-5.5,5.5'  fill='none' stroke-width='2' stroke='#fff' />
+<path d='M5.5,0 l5.5,5.5 l-5.5,5.5' transform='translate(8)' fill='none' stroke-width='2' stroke='#8c8ca1' />
+<path d='M5.5,0 l5.5,5.5 l-5.5,5.5' transform='translate(16)' fill='none' stroke-width='2' stroke='#484769' />
+<path d='M0,20 l5.5,-5.5 l5.5,5.5' transform='translate(0,11.5)' fill='none' stroke-width='2' stroke='#fff' />
+</svg>
