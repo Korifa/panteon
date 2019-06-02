@@ -613,7 +613,7 @@ body {
   .nav_text_par {
       margin-bottom: 1em;
   }
-
+/*
   .underwater_rocks_nav ul #li_nav_text_live a:hover + .nav_text_live {
     display: block;
   }
@@ -626,7 +626,7 @@ body {
   }
   #li_nav_text_live_on_mars:hover .nav_text_live_on_mars {
       display: block;
-  }
+  }*/
   #footer {
       background: #c2529a url('../images/750/footer_bg_750.jpg') no-repeat center top;
       background-size: cover;

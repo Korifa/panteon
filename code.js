@@ -1,18 +1,19 @@
 class TouchRocksLink {
     constructor(item) {
         this.link = item;
+        this.linkSibling = this.link.nextElementSibling;
         this.linkData = !!this.link.getAttribute('data');
-        this.link.addEventListener('touched', this.handleThouchies);
         this.handleThouchies = this.handleThouchies.bind(this);
+        this.link.addEventListener('click', this.handleThouchies);
     }
 
     handleThouchies(e) {
         if (this.linkData) {
             this.linkData = !this.linkData
-            this.link.nextElementSibling.style.display = 'block';
+            this.linkSibling.style.display = 'block';
         } else {
             this.linkData = !this.linkData
-            this.link.nextElementSibling.style.display = 'none';
+            this.linkSibling.style.display = 'none';
         }
     }
 
