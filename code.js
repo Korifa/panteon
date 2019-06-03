@@ -9,9 +9,13 @@ class TouchRocksLink {
 
     handleThouchies(e) {
         if (this.linkData) {
-            this.linkData = !this.linkData
+            this.link.style.color = '#fff';
+            this.link.classList.add('pseudoclass')
             this.linkSibling.style.display = 'block';
+            this.linkData = !this.linkData
         } else {
+            this.link.style.color = '';
+            this.link.classList.remove('pseudoclass')
             this.linkData = !this.linkData
             this.linkSibling.style.display = 'none';
         }

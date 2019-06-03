@@ -597,10 +597,8 @@ body {
       display: block;
       background: url('../images/file.svg') no-repeat 24px -12px;
   }
-  .underwater_rocks_nav ul li:hover a {
-      color: #fff;
-  }
-  .underwater_rocks_nav ul li:hover a::after {
+
+  .underwater_rocks_nav ul .pseudoclass::after {
       background-position-y: -24px;
   }
   .nav_text {
@@ -613,20 +611,51 @@ body {
   .nav_text_par {
       margin-bottom: 1em;
   }
-/*
-  .underwater_rocks_nav ul #li_nav_text_live a:hover + .nav_text_live {
-    display: block;
+
+  .life_in_the_colony_grid {
+      display: grid;
+      grid-template-columns: 60px auto;
+      grid-template-rows: repeat(3,auto);
   }
 
-  #li_nav_text_technologies:hover .nav_text_technologies {
-      display: block;
+  .life_in_the_colony_headline {
+      grid-column: 1/3;
+      grid-row: 1/ span 1;
+      font: 2.25rem var(--font-bold);
+      color: var(--main-color);
+      margin: 1.38em 0 1em;
   }
-  #li_nav_text_traveling:hover .nav_text_traveling {
-      display: block;
+
+  .live_in_colony_box {
+    grid-row: 2/ span 2;
+    grid-column: 2/3;
   }
-  #li_nav_text_live_on_mars:hover .nav_text_live_on_mars {
+
+  .live_in_colony_svg_box {
+    grid-column: 1/2;
+    grid-row: 2/ span 2;
+  }
+
+  .live_in_colony_box_headline {
+      font: 1.5rem var(--font-bold);
+      margin: 1.25em 0 1.125em;
+  }
+  .live_in_colony_box_body {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 2.1875em;
+  }
+  .live_in_colony_box_btn {
       display: block;
-  }*/
+      width: 160px;
+      font: 1rem var(--font-bold);
+      background: var(--main-color);
+      padding: 0.8em 0;
+      color: #fff;
+      border-radius: 23px;
+  }
+
+
   #footer {
       background: #c2529a url('../images/750/footer_bg_750.jpg') no-repeat center top;
       background-size: cover;
@@ -882,7 +911,7 @@ body {
         background-position-x: left;
     }
 
-    .underwater_rocks_nav ul li:hover a::after {
+    .underwater_rocks_nav ul .pseudoclass::after {
         background-position: center top;
     }
 
@@ -916,7 +945,32 @@ body {
         margin-bottom: 1.25em;
         display: block;
     }
-    
+    .life_in_the_colony_grid {
+        overflow: hidden;
+    }
+
+    .live_in_colony_box {
+        grid-column: 1/3;
+        grid-row: 3/ span 1;
+    }
+    .live_in_colony_box_btn {
+        margin-bottom: 3em;
+    }
+    .life_in_the_colony_headline {
+        font-size: 3rem;
+        margin: 1.1em 0 0.8em;
+    }
+
+    .live_in_colony_svg_box {
+        height: 60px;
+        margin: 1.5em 0;
+        transform-origin: 0% 0%;
+        transform: rotate(90deg) scaleY(-1);
+        transition: all .5s ease-in-out;
+        grid-column: 1/3;
+        grid-row: 2/ span 1;
+    }
+
     .footer_form_btn {
         width: 79.6875%;
         max-width: initial;
@@ -1042,6 +1096,18 @@ body {
 
     #footer_form {
         max-width: 400px;
+    }
+
+    .live_in_colony_box {
+        grid-column: 2/3;
+        grid-row: 2/ span 2;
+    }
+
+    .live_in_colony_svg_box {
+        transform: initial;
+        height: 770px;
+        grid-column: 1/2;
+        grid-row: 2/ span 2;
     }
 
 }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 21" width="25" height="21">
+	<defs>
+		<image width="72" height="60" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MiA2MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjYwIj4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMNzIgMEw3MiA2MEwwIDYwWiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICNlMTI0NTcgfSAKCTwvc3R5bGU+Cgk8ZyBpZD0iUGFnZSAxIiBjbGlwLXBhdGg9InVybCgjY3AxKSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0ic2hwMCIgZD0iTTQ2IDBMNTEgMTBMNjUgMTBDNjguODggMTAgNzIgMTMuMTIgNzIgMTdMNzIgNTNDNzIgNTYuODggNjguODggNjAgNjUgNjBMNyA2MEMzLjEyIDYwIDAgNTYuODggMCA1M0wwIDE3QzAgMTMuMTIgMy4xMiAxMCA3IDEwTDIxIDEwTDI2IDBMNDYgMFpNMTkgMzVDMTkgNDQuMzUgMjYuNjUgNTIgMzYgNTJDNDUuMzUgNTIgNTMgNDQuMzUgNTMgMzVDNTMgMjUuNjUgNDUuMzUgMTggMzYgMThDMjYuNjUgMTggMTkgMjUuNjUgMTkgMzVaTTQ3IDM1QzQ3IDQxLjExIDQyLjExIDQ2IDM2IDQ2QzI5Ljg5IDQ2IDI1IDQxLjExIDI1IDM1QzI1IDI4Ljg5IDI5Ljg5IDI0IDM2IDI0QzQyLjExIDI0IDQ3IDI4Ljg5IDQ3IDM1WiIgLz4KCTwvZz4KPC9zdmc+"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Организация жизни в колонии">
+		<g id="Икогнки">
+			<g id="Группа 9">
+				<use id="Photo" href="#img1" transform="matrix(0.347,0,0,0.35,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>
