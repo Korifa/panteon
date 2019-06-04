@@ -739,6 +739,53 @@ body {
       grid-column: 1/3;
       grid-row: 4/ span 1;
       margin: 3.57em auto 2.357em;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .social_footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .social_footer a {
+      display: block;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: rgba(64, 66, 66, 0.48);
+  }
+  .social_footer a:last-of-type {
+      border-radius: 5px;
+      width: 33px;
+      height: 23px;
+  }
+  .social_footer a:hover {
+      background: transparent;
+  }
+
+  .footer_logo {
+      margin: 0;
+      display: block;
+      width: 115px;
+      text-align: right;
+      height: 35px;
+  }
+  .footer_logo::before {
+      content: url('../images/logo_footer.png');
+      top: 0;
+      left: 0;
+  }
+  .footer_logo::after {
+      left: 41px;
+  }
+  .footer_logo_item {
+      font-size: 0.86rem;
+  }
+  .footer_extra_inf {
+      color:#fff;
   }
 @media (min-width: 600px) {
     
@@ -1006,6 +1053,36 @@ body {
     .footer_text_cont {
         grid-column: 2/3;
     }
+    .footer_add_inf {
+        height: initial;
+        flex-direction: row-reverse;
+        margin: 6.42em 0 3.71em;
+    }
+    .footer_logo_item {
+        font-size: 0.86rem;
+    }
+    .footer_logo {
+        margin-top: 0;
+    }
+    .footer_logo::before {
+        top: 0;
+    }
+    .social_footer {
+        position: relative;
+    }
+    .social_footer::before {
+        content: 'Следуйте за нами';
+        position: absolute;
+        left: -80%;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 750px) {
+    .social_footer::before {
+        opacity: 1;
+    }
+
 }
 @media (min-width: 1000px) {
     .header {
