@@ -668,7 +668,7 @@ body {
   .footer_wrapper_outer {
     display: grid;
     grid-template-columns: minmax(320px,400px) auto;
-    grid-template-rows: 4 auto;
+    grid-template-rows: repeat(4,auto);
   }
   
   .footer_headline {
